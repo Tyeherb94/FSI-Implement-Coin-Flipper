@@ -22,6 +22,7 @@ const heads= document.getElementById("heads")
 const tails= document.getElementById("tails")
 const headsPerc= document.getElementById("heads-percent")
 const tailsPerc= document.getElementById("tails-percent")
+const clearBtn = document.getElementById("clear")
 
 flipBtn.addEventListener('click',()=>{
     let flippedHeads = Math.random()<0.5
@@ -71,6 +72,21 @@ flipBtn.addEventListener('click',()=>{
 
 
     // Clear Button Click Handler
+
+
+clearBtn.addEventListener('click', ()=>{
+
+    tailRoll=0
+    headRoll=0
+    percentHeads=0
+    percentTails=0
+
+    heads.textContent= headRoll
+    tails.textContent= tailRoll
+    headsPerc.textContent=percentHeads
+    tailsPerc.textContent=percentTails
+    message.textContent = "Lets Get Rolling"
+})
         // TODO: Reset global variables to 0
         // TODO: Update the scoreboard (same logic as in flip button click handler)
 
