@@ -83,8 +83,8 @@ clearBtn.addEventListener('click', ()=>{
 
     heads.textContent= headRoll
     tails.textContent= tailRoll
-    headsPerc.textContent=percentHeads
-    tailsPerc.textContent=percentTails
+    headsPerc.textContent=percentHeads + '%'
+    tailsPerc.textContent=percentTails + '%'
     message.textContent = "Lets Get Rolling"
 })
         // TODO: Reset global variables to 0
